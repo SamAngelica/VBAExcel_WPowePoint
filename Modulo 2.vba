@@ -97,7 +97,7 @@ Private Sub ToggleButton1_Click()
 
  Dim tbl As ListObject
  Set ws = ThisWorkbook.Sheets("Preenchimento")
- Set tbl = ws.ListObjects("Tabela4")
+ Set tbl = ws.ListObjects("Tabela")
 
  Dim novaLinha As ListRow
  Set novaLinha = tbl.ListRows.Add
@@ -173,16 +173,6 @@ Private Sub ToggleButton1_Click()
  .Range(1, 10).Value = contatosImpactados ' Contatos D. Imp.
  .Range(1, 11).Value = TextBox11.Value ' Chave
  .Range(1, 12).Value = selecionados4 ' Conduzindo
- .Range(1, 13).Value = TextBox15.Value ' Nome
- .Range(1, 14).Value = TextBox4.Value ' Descr.
- .Range(1, 15).Value = TextBox16.Value ' Raiz
- .Range(1, 16).Value = TextBox5.Value ' Impactos
- .Range(1, 17).Value = TextBox17.Value ' Tomadas
- .Range(1, 18).Value = TextBox18.Value ' Plano
- .Range(1, 19).Value = TextBox6.Value ' Valor
- .Range(1, 20).Value = TextBox19.Value ' Acionado
- .Range(1, 21).Value = ListBox6.Value ' Aprovado
- .Range(1, 23).Value = TextBox20.Value ' Ponto focal
  End With
 
  ' Limpa os campos do formulário
@@ -194,10 +184,6 @@ Private Sub ToggleButton1_Click()
  MsgBox "Dados salvos com sucesso!", vbInformation, "Sucesso"
 
 End Sub
-
-    👏
-    👍
-    😊
 
 Private Sub UserForm_Initialize()
 
