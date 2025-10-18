@@ -19,7 +19,7 @@ Sub Gerar()
  For Each formaSlide In priSlide.Shapes
  If formaSlide.HasTextFrame Then
  If formaSlide.TextFrame.HasText Then
- For j = 2 To 24
+ For j = 2 To 10
  itemSubst = Trim(Cells(1, j).Value)
  Dim ultimaLinhaTabela As Long
  ultimaLinhaTabela = Cells(Rows.Count, j).End(xlUp).Row
